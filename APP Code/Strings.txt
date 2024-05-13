@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">URM_3D</string>
+    <string name="URM">3D App</string>
+    <string name="title_activity_display">display</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="INPUT">Enter URL Here.</string>
+    <color name="cream">#e7e2b2</color>
+    <color name="light_blue">#cffff2</color>
+    <color name="dark_blue">#2826ff</color>
+</resources>

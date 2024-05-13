@@ -1,0 +1,47 @@
+package com.example.maaz.urm_3d;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.VideoView;
+
+
+
+
+
+
+
+public class display extends AppCompatActivity {
+
+    VideoView videoL;
+    VideoView videoR;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_display);
+
+
+
+        Intent intent= getIntent();
+        String leftUrl= intent.getStringExtra("Left");
+        String rightUrl= intent.getStringExtra("Right");
+
+        Uri uriL= Uri.parse(leftUrl);
+        Uri uriR= Uri.parse(rightUrl);
+
+
+
+        videoL= (VideoView)findViewById(R.id.videoView);
+        videoR= (VideoView)findViewById(R.id.videoView2);
+
+        videoR.setVideoURI(uriR);
+        videoL.setVideoURI(uriL);
+
+        videoR.start();
+        videoL.start();
+    }
+
+
+}
