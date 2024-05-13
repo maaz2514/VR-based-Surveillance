@@ -1,4 +1,4 @@
-# VR-based-Surveillance
+# VR-based-Surveillance-System
 
 ##Overview
 This project implements a Virtual Reality (VR)-based surveillance system using Arduino, Raspberry Pi, MPU-6050 motion-tracking sensors, Xbee radio transmission, and servo motors. The system allows users to control a camera's movement remotely using motion detection sensors mounted on VR glasses.
